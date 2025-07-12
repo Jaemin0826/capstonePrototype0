@@ -562,21 +562,13 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   flex-direction: column;
   gap: 12px;
   padding: 54px 20px 22px 20px;
-  border-radius: 10px;
-
-  /* position: absolute;
-  top: 140px;
-  left: 20px; */
-
   border-radius: 16px;
   border: 1px solid #fff;
-
   background: linear-gradient(
     113deg,
     rgba(255, 255, 255, 0.8) 4.14%,
     rgba(255, 255, 255, 0.4) 95.86%
   );
-
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(14px);
   z-index: 998;
@@ -587,7 +579,6 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   display: flex;
   justify-content: flex-start;
   gap: 6px;
-
   font-size: 20px;
   font-weight: 700;
   color: var(--Gray9);
@@ -598,7 +589,6 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   align-items: center;
   border-radius: 2px;
   background: #333;
-
   color: var(--Gray1);
   font-size: 12px;
   font-weight: 600;
@@ -617,7 +607,6 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   margin-bottom: 18px;
 `,Fy=x.div`
   display: flex;
-
   color: var(--Primary);
   font-size: 13px;
   font-weight: 600;
@@ -630,23 +619,15 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
 `,Py=x.div`
   width: 100px;
   height: 100px;
-  /* border-radius: 4px;
-  background: linear-gradient(
-    113deg,
-    rgba(225, 225, 225, 0.8) 4.14%,
-    rgba(245, 245, 245, 0.5) 95.86%
-  );
-  backdrop-filter: blur(14px); */
+  position: absolute;
+  top: -52px;
+  left: 16px;
 
   & > img {
     width: 100%;
     height: 100%;
   }
-
-  position: absolute;
-  top: -52px;
-  left: 16px;
-`;function Iy({data:a}){if(!a)return null;const r=a.current/a.total*100;return s.jsx(Zy,{children:s.jsxs(Vy,{children:[s.jsx(Py,{children:s.jsx("img",{src:`/Collection/${a.img}${a.level}.png`})}),s.jsxs($y,{children:[a.name,s.jsxs(Ky,{children:["Lv",a.level]})]}),s.jsxs(Jy,{children:[s.jsxs(Fy,{children:[s.jsx("span",{children:a.current}),s.jsxs("p",{children:["/",a.total]})]}),s.jsx(rs,{value:r,height:"12px"})]}),s.jsx(Wy,{children:a.desc})]})})}const eb=x.div`
+`;function Iy({data:a}){if(!a)return null;const r="/capstonePrototype0/",o=a.current/a.total*100;return s.jsx(Zy,{children:s.jsxs(Vy,{children:[s.jsx(Py,{children:s.jsx("img",{src:r+`Collection/${a.img}${a.level}.png`,alt:`${a.name} 레벨 ${a.level} 썸네일`})}),s.jsxs($y,{children:[a.name,s.jsxs(Ky,{children:["Lv",a.level]})]}),s.jsxs(Jy,{children:[s.jsxs(Fy,{children:[s.jsx("span",{children:a.current}),s.jsxs("p",{children:["/",a.total]})]}),s.jsx(rs,{value:o,height:"12px"})]}),s.jsx(Wy,{children:a.desc})]})})}const eb=x.div`
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
