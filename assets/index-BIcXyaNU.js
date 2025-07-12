@@ -76,7 +76,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   letter-spacing: -0.45px;
   text-align: ${a=>a.hasBackButton?"center":"left"};
   flex: 1;
-`;function Xl({title:a,showBackButton:r=!1,bgColor:o}){const c=Dt();return s.jsxs(Qv,{bgColor:o,children:[r&&s.jsx(Dh,{onClick:()=>c(-1),children:s.jsx("img",{src:"/Icon/chevron-left.svg",alt:"back"})}),a&&s.jsx(Zv,{hasBackButton:r,children:a}),s.jsx(Dh,{children:s.jsx("img",{src:"",alt:""})})]})}const M0=m.div`
+`;function Xl({title:a,showBackButton:r=!1,bgColor:o}){const c=Dt();return s.jsxs(Qv,{bgColor:o,children:[r&&s.jsx(Dh,{onClick:()=>c(-1),children:s.jsx("img",{src:"/capstonePrototype0/Icon/chevron-left.svg",alt:"back"})}),a&&s.jsx(Zv,{hasBackButton:r,children:a}),s.jsx(Dh,{children:s.jsx("img",{src:"",alt:""})})]})}const M0=m.div`
   display: flex;
   flex-direction: ${({mini:a})=>a?"row":"column"};
   align-items: ${({mini:a})=>a?"center":"flex-start"};
@@ -178,7 +178,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
 `,Iv=m.img`
   width: 140px;
   height: auto;
-`;function _0(){const a=$t(),[r,o]=S.useState("");S.useEffect(()=>{const y=()=>{const x=new Date;let g=x.getHours(),T=x.getMinutes(),_=g%12===0?12:g%12;o(`${_}:${T.toString().padStart(2,"0")}`)};y();const E=setInterval(y,1e4);return()=>clearInterval(E)},[]);const c=a.pathname,h=["/","/running","/running/record","/fieldHistory","/history/record"].includes(c)?"transparent":"#fff";return s.jsxs(Fv,{bgColor:h,children:[s.jsx(Pv,{children:r}),s.jsx(Iv,{src:"/Icon/StatusIcon.svg",alt:"status icons"})]})}const ey=m.div`
+`;function _0(){const a=$t(),[r,o]=S.useState("");S.useEffect(()=>{const y=()=>{const x=new Date;let g=x.getHours(),T=x.getMinutes(),_=g%12===0?12:g%12;o(`${_}:${T.toString().padStart(2,"0")}`)};y();const E=setInterval(y,1e4);return()=>clearInterval(E)},[]);const c=a.pathname,h=["/","/running","/running/record","/fieldHistory","/history/record"].includes(c)?"transparent":"#fff";return s.jsxs(Fv,{bgColor:h,children:[s.jsx(Pv,{children:r}),s.jsx(Iv,{src:"/capstonePrototype0/Icon/StatusIcon.svg",alt:"status icons"})]})}const ey=m.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -248,7 +248,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
     letter-spacing: -0.4px;
     color: var(--Gray7);
   }
-`;function fy(){const a=Dt();return s.jsxs(oy,{children:[s.jsx(Si,{distance:"2.24",simple:!0,thumnail:!0}),s.jsxs(sy,{onClick:()=>a("/history/record"),children:[s.jsx("p",{children:"필드 히스토리 보러가기"}),s.jsx("img",{src:"../../public/Icon/chevron-right.svg"})]})]})}const dy=m.button`
+`;function fy(){const a=Dt();return s.jsxs(oy,{children:[s.jsx(Si,{distance:"2.24",simple:!0,thumnail:!0}),s.jsxs(sy,{onClick:()=>a("/history/record"),children:[s.jsx("p",{children:"필드 히스토리 보러가기"}),s.jsx("img",{src:"/capstonePrototype0/Icon/chevron-right.svg",alt:"다음"})]})]})}const dy=m.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -274,7 +274,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   display: flex;
   font-weight: 700;
   color: var(--Gray4);
-`;function kl({type:a="default",size:r="large",icon:o=!1,text:c="Button",unitToggle:d=!1,unitText:h="/ 20",unit:y="개",width:E="100%",onClick:x}){return s.jsxs(dy,{type:a,size:r,$width:E,onClick:x,children:[o&&s.jsx(py,{children:s.jsx("img",{src:"/Icon/disabled-check.svg",alt:""})}),c,d&&s.jsxs(hy,{children:[s.jsx("p",{children:h}),s.jsx("p",{children:y})]})]})}const gy=m.div`
+`;function kl({type:a="default",size:r="large",icon:o=!1,text:c="Button",unitToggle:d=!1,unitText:h="/ 20",unit:y="개",width:E="100%",onClick:x}){return s.jsxs(dy,{type:a,size:r,$width:E,onClick:x,children:[o&&s.jsx(py,{children:s.jsx("img",{src:"/capstonePrototype0/Icon/disabled-check.svg",alt:""})}),c,d&&s.jsxs(hy,{children:[s.jsx("p",{children:h}),s.jsx("p",{children:y})]})]})}const gy=m.div`
   display: flex;
   flex-direction: column;
   text-align: flex-start;
@@ -295,7 +295,6 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   cursor: pointer;
 `,qu=m.div`
   padding: 4px 0px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -307,7 +306,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
     letter-spacing: -0.4px;
     color: var(--Gray8);
   }
-`;function vy({onClose:a}){return s.jsxs(gy,{children:[s.jsx(xy,{children:"목표 설정"}),s.jsxs(my,{children:[s.jsxs(Lh,{children:[s.jsxs(qu,{children:[s.jsx("img",{src:"../../public/Icon/distance.svg"}),s.jsx("p",{children:"거리로 설정"})]}),s.jsxs(qu,{children:[s.jsx("p",{children:"10km"}),s.jsx("img",{src:"../../public/Icon/chevron-right.svg"})]})]}),s.jsxs(Lh,{children:[s.jsxs(qu,{children:[s.jsx("img",{src:"../../public/Icon/time.svg"}),s.jsx("p",{children:"시간으로 설정"})]}),s.jsxs(qu,{children:[s.jsx("p",{children:"1시간"}),s.jsx("img",{src:"../../public/Icon/chevron-right.svg"})]})]})]}),s.jsx(kl,{type:"default",size:"large",text:"닫기",onClick:a})]})}const yy=m.div`
+`;function vy({onClose:a}){const r="/capstonePrototype0/";return s.jsxs(gy,{children:[s.jsx(xy,{children:"목표 설정"}),s.jsxs(my,{children:[s.jsxs(Lh,{children:[s.jsxs(qu,{children:[s.jsx("img",{src:r+"Icon/distance.svg",alt:"거리 설정 아이콘"}),s.jsx("p",{children:"거리로 설정"})]}),s.jsxs(qu,{children:[s.jsx("p",{children:"10km"}),s.jsx("img",{src:r+"Icon/chevron-right.svg",alt:"다음"})]})]}),s.jsxs(Lh,{children:[s.jsxs(qu,{children:[s.jsx("img",{src:r+"Icon/time.svg",alt:"시간 설정 아이콘"}),s.jsx("p",{children:"시간으로 설정"})]}),s.jsxs(qu,{children:[s.jsx("p",{children:"1시간"}),s.jsx("img",{src:r+"Icon/chevron-right.svg",alt:"다음"})]})]})]}),s.jsx(kl,{type:"default",size:"large",text:"닫기",onClick:a})]})}const yy=m.div`
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -505,7 +504,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
     width: 16px;
     height: 16px;
   }
-`;function O0({dayData:a,distanceData:r,onClick:o}){return s.jsxs(Uy,{onClick:o,children:[s.jsxs(Gy,{children:[s.jsx("p",{children:a}),s.jsx("img",{src:"../public/Icon/chevron-right-white.svg"})]}),s.jsxs(Hy,{children:[s.jsx(_t,{label:"거리",data:r,mini:!0}),s.jsx(_t,{label:"시간",data:"12:32",mini:!0}),s.jsx(_t,{label:"평균 페이스",data:"5'30'",mini:!0})]})]})}const Ly=m.div`
+`;function O0({dayData:a,distanceData:r,onClick:o}){return s.jsxs(Uy,{onClick:o,children:[s.jsxs(Gy,{children:[s.jsx("p",{children:a}),s.jsx("img",{src:"/capstonePrototype0/Icon/chevron-right-white.svg",alt:""})]}),s.jsxs(Hy,{children:[s.jsx(_t,{label:"거리",data:r,mini:!0}),s.jsx(_t,{label:"시간",data:"12:32",mini:!0}),s.jsx(_t,{label:"평균 페이스",data:"5'30'",mini:!0})]})]})}const Ly=m.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -730,7 +729,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.96px;
-`;function N0(){const a=Dt();return s.jsxs(tb,{children:[s.jsxs(nb,{children:[s.jsxs(lb,{children:[s.jsx("img",{src:"../Illust/warning.svg"}),s.jsx("p",{children:"나무가 시들고 있어요!"})]}),s.jsx("p",{children:"풀에게 줄 물과 비료가 필요해요."})]}),s.jsxs(ab,{children:[s.jsx("p",{children:"시들기까지 남은 시간"}),s.jsx(ib,{children:"05:22:13"})]}),s.jsx(kl,{size:"small",text:"뛰러 가기",onClick:()=>a("/running")})]})}const ub=m.div`
+`;function N0(){const a=Dt();return s.jsxs(tb,{children:[s.jsxs(nb,{children:[s.jsxs(lb,{children:[s.jsx("img",{src:"/capstonePrototype0/Illust/warning.svg",alt:"경고"}),s.jsx("p",{children:"나무가 시들고 있어요!"})]}),s.jsx("p",{children:"풀에게 줄 물과 비료가 필요해요."})]}),s.jsxs(ab,{children:[s.jsx("p",{children:"시들기까지 남은 시간"}),s.jsx(ib,{children:"05:22:13"})]}),s.jsx(kl,{size:"small",text:"뛰러 가기",onClick:()=>a("/running")})]})}const ub=m.div`
   width: 32px;
   height: 32px;
   display: flex;
@@ -750,7 +749,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   &:hover {
     transform: scale(1.1);
   }
-`;function B0({onClick:a}){return s.jsx(ub,{onClick:a,children:s.jsx("img",{src:"../Illust/warning.svg"})})}const rb=m.div`
+`;function B0({onClick:a}){return s.jsx(ub,{onClick:a,children:s.jsx("img",{src:"/capstonePrototype0/Illust/warning.svg",alt:"경고"})})}const rb=m.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -795,7 +794,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   font-size: 14px;
   font-weight: 600;
   margin-left: 4px;
-`;function U0(){const[a,r]=S.useState(!1),o=Dt(),c=[{rank:1,name:"구예진",distance:99.9},{rank:2,name:"박재민",distance:24.3},{rank:3,name:"이영재",distance:18.7},{rank:4,name:"김소리",distance:10.2},{rank:5,name:"김한주",distance:6.6},{rank:6,name:"나나나",distance:6.6}],d=a?6:3,h=c.slice(0,d),y=c.length-d,E=()=>{o("/fieldHistory")};return s.jsxs(rb,{onMouseEnter:()=>r(!0),onMouseLeave:()=>r(!1),onClick:E,children:[s.jsx(cb,{children:h.map(x=>s.jsx(ob,{isHovered:a,children:s.jsx("img",{src:`/Profile/${x.name}.png`,alt:x.name})},x.name))}),a&&s.jsx("img",{src:"/Icon/chevron-right.svg"}),!a&&y>0&&s.jsxs(sb,{children:["+",y]})]})}const fb=m.div`
+`;function U0(){const[a,r]=S.useState(!1),o=Dt(),c="/capstonePrototype0/",d=[{rank:1,name:"구예진",distance:99.9},{rank:2,name:"박재민",distance:24.3},{rank:3,name:"이영재",distance:18.7},{rank:4,name:"김소리",distance:10.2},{rank:5,name:"김한주",distance:6.6},{rank:6,name:"나나나",distance:6.6}],h=a?6:3,y=d.slice(0,h),E=d.length-h,x=()=>{o("/fieldHistory")};return s.jsxs(rb,{onMouseEnter:()=>r(!0),onMouseLeave:()=>r(!1),onClick:x,children:[s.jsx(cb,{children:y.map(g=>s.jsx(ob,{isHovered:a,children:s.jsx("img",{src:c+`Profile/${g.name}.png`,alt:g.name})},g.name))}),a&&s.jsx("img",{src:c+"Icon/chevron-right.svg",alt:"더보기"}),!a&&E>0&&s.jsxs(sb,{children:["+",E]})]})}const fb=m.div`
   width: 402px;
   height: 874px;
 
@@ -866,7 +865,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   letter-spacing: ${({$type:a})=>a==="default"?"-0.35px":"-0.4px"};
   font-weight: 500;
   color: var(--Gray8);
-`;function H0({type:a="default"}){const r=Dt(),o=()=>{a==="default"&&r("/crew")};return s.jsxs(pb,{onClick:o,$type:a,children:[s.jsx(hb,{$type:a,children:s.jsx("img",{src:"/crewimg.png",alt:""})}),s.jsxs(gb,{children:[s.jsxs(xb,{children:[s.jsx(mb,{children:"한국공대"}),s.jsx(vb,{children:s.jsx("img",{src:"/LevelBadge/Lv8.svg",alt:"레벨뱃지"})})]}),s.jsxs(yb,{children:[s.jsx(bb,{children:s.jsx("img",{src:"/Icon/crewnumprofile.svg",alt:"멤버 수"})}),s.jsx(Sb,{$type:a,children:"13/20"})]})]})]})}const jb=m.div`
+`;function H0({type:a="default"}){const r=Dt(),o=()=>{a==="default"&&r("/crew")};return s.jsxs(pb,{onClick:o,$type:a,children:[s.jsx(hb,{$type:a,children:s.jsx("img",{src:"/capstonePrototype0/crewimg.png",alt:""})}),s.jsxs(gb,{children:[s.jsxs(xb,{children:[s.jsx(mb,{children:"한국공대"}),s.jsx(vb,{children:s.jsx("img",{src:"/capstonePrototype0/LevelBadge/Lv8.svg",alt:"레벨뱃지"})})]}),s.jsxs(yb,{children:[s.jsx(bb,{children:s.jsx("img",{src:"/capstonePrototype0/Icon/crewnumprofile.svg",alt:"멤버 수"})}),s.jsx(Sb,{$type:a,children:"13/20"})]})]})]})}const jb=m.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -904,16 +903,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   border-radius: inherit;
   pointer-events: none;
   z-index: 0;
-`;m.div`
-  position: absolute;
-  inset: 0;
-  background-color: #1d1d1d;
-  opacity: 0.1;
-  mix-blend-mode: color-dodge;
-  border-radius: inherit;
-  pointer-events: none;
-  z-index: 1;
-`;const Tb=m.div`
+`,Tb=m.div`
   position: absolute;
   inset: 0;
   background-color: #ffffff;
@@ -936,7 +926,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   line-height: 100%;
   position: relative;
   z-index: 3;
-`,Ab=[{id:"map",label:"맵",icon:"/Illust/map.svg"},{id:"collection",label:"도감",icon:"/Illust/collection.svg"},{id:"mission",label:"미션",icon:"/Illust/mission.svg"}];function Cb({onClick:a}){const r=Dt();return s.jsx(jb,{children:Ab.map(o=>s.jsxs(Eb,{onClick:()=>{o.id==="mission"?r("/mission"):o.id==="collection"&&a?.()},children:[s.jsx(wb,{}),s.jsx(Tb,{}),s.jsx(Rb,{src:o.icon,alt:o.label}),s.jsx(zb,{children:o.label})]},o.id))})}const Mb=()=>{const a=S.useRef(null);return S.useEffect(()=>{const r=document.createElement("script");return r.src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js",r.onload=()=>{new window.Sketchfab("1.12.1",a.current).init("8bb6749a0a214cbb952b6e3a185d7765",{autostart:1,preload:1,ui_controls:0,ui_infos:0,ui_hint:0,ui_watermark:0,success:function(d){d.start(),d.addEventListener("viewerready",function(){console.log("✅ Sketchfab Viewer 준비 완료!")})},error:function(){console.error("❌ Sketchfab API 초기화 실패")}})},document.body.appendChild(r),()=>{document.body.removeChild(r)}},[]),s.jsx("div",{children:s.jsx("iframe",{id:"api-frame",ref:a,title:"Sketchfab Viewer",allow:"autoplay; fullscreen; xr-spatial-tracking",allowFullScreen:!0,mozallowfullscreen:"true",webkitallowfullscreen:"true",style:{width:"402px",height:"874px",border:"none",position:"relative",zIndex:1}})})},_b=m.div`
+`,Ab=[{id:"map",label:"맵",icon:"/Illust/map.svg"},{id:"collection",label:"도감",icon:"/Illust/collection.svg"},{id:"mission",label:"미션",icon:"/Illust/mission.svg"}];function Cb({onClick:a}){const r=Dt(),o="/capstonePrototype0/";return s.jsx(jb,{children:Ab.map(c=>{const d=c.icon.startsWith("/")?c.icon.slice(1):c.icon;return s.jsxs(Eb,{onClick:()=>{c.id==="mission"?r("/mission"):c.id==="collection"&&a?.()},children:[s.jsx(wb,{}),s.jsx(Tb,{}),s.jsx(Rb,{src:o+d,alt:c.label}),s.jsx(zb,{children:c.label})]},c.id)})})}const Mb=()=>{const a=S.useRef(null);return S.useEffect(()=>{const r=document.createElement("script");return r.src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js",r.onload=()=>{new window.Sketchfab("1.12.1",a.current).init("8bb6749a0a214cbb952b6e3a185d7765",{autostart:1,preload:1,ui_controls:0,ui_infos:0,ui_hint:0,ui_watermark:0,success:function(d){d.start(),d.addEventListener("viewerready",function(){console.log("✅ Sketchfab Viewer 준비 완료!")})},error:function(){console.error("❌ Sketchfab API 초기화 실패")}})},document.body.appendChild(r),()=>{document.body.removeChild(r)}},[]),s.jsx("div",{children:s.jsx("iframe",{id:"api-frame",ref:a,title:"Sketchfab Viewer",allow:"autoplay; fullscreen; xr-spatial-tracking",allowFullScreen:!0,mozallowfullscreen:"true",webkitallowfullscreen:"true",style:{width:"402px",height:"874px",border:"none",position:"relative",zIndex:1}})})},_b=m.div`
   width: 184px;
   display: flex;
   flex-direction: column;
@@ -1128,7 +1118,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   width: 100%;
   border-radius: 10px;
   background: rgba(246, 247, 251, 0.8);
-`;function i2(){return s.jsxs(a2,{children:[s.jsx(ta,{iconSrc:"/Illust/field.svg",alt:"생성 필드 수",label:"생성 필드 수",value:17,unit:"개"}),s.jsx(ta,{iconSrc:"/Illust/mission2.svg",alt:"미션 달성률",label:"미션 달성률",value:22.2,unit:"%"}),s.jsx(ta,{iconSrc:"/Illust/collection2.svg",alt:"도감 수집률",label:"도감 수집률",value:22.2,unit:"%"})]})}const u2=m.div`
+`;function i2(){const a="/capstonePrototype0/";return s.jsxs(a2,{children:[s.jsx(ta,{iconSrc:a+"Illust/field.svg",alt:"생성 필드 수",label:"생성 필드 수",value:17,unit:"개"}),s.jsx(ta,{iconSrc:a+"Illust/mission2.svg",alt:"미션 달성률",label:"미션 달성률",value:22.2,unit:"%"}),s.jsx(ta,{iconSrc:a+"Illust/collection2.svg",alt:"도감 수집률",label:"도감 수집률",value:22.2,unit:"%"})]})}const u2=m.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1183,7 +1173,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
 `,g2=m.span`
   width: 24px;
   height: 24px;
-`;function x2({rank:a,name:r,distance:o,onClick:c}){return s.jsxs(u2,{onClick:c,children:[s.jsxs(r2,{children:[a===1&&s.jsx(o2,{src:"/Illust/crown.svg",alt:"1등"}),s.jsx(c2,{children:a})]}),s.jsxs(s2,{children:[s.jsx(f2,{children:s.jsx("img",{src:"",alt:""})}),s.jsxs(d2,{children:[s.jsx(p2,{children:r}),s.jsxs(h2,{children:[o,"km"]})]})]}),s.jsx(g2,{children:s.jsx("img",{src:"/Icon/chevron-right-Gray6.svg",alt:""})})]})}const m2=m.div`
+`;function x2({rank:a,name:r,distance:o,onClick:c}){const d="/capstonePrototype0/";return s.jsxs(u2,{onClick:c,children:[s.jsxs(r2,{children:[a===1&&s.jsx(o2,{src:d+"Illust/crown.svg",alt:"1등"}),s.jsx(c2,{children:a})]}),s.jsxs(s2,{children:[s.jsx(f2,{children:s.jsx("img",{src:d+"crewimg.png",alt:""})}),s.jsxs(d2,{children:[s.jsx(p2,{children:r}),s.jsxs(h2,{children:[o,"km"]})]})]}),s.jsx(g2,{children:s.jsx("img",{src:d+"Icon/chevron-right-Gray6.svg",alt:""})})]})}const m2=m.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1208,7 +1198,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   display: flex;
   width: 24px;
   height: 24px;
-`,b2=[{rank:1,name:"구예진",distance:99.9},{rank:2,name:"박재민",distance:24.3},{rank:3,name:"이영재",distance:18.7},{rank:4,name:"김소리",distance:10.2},{rank:5,name:"김한주",distance:6.6}];function S2(){const a=Dt();return s.jsxs(m2,{children:[s.jsxs(v2,{children:[s.jsx(y2,{children:s.jsx("img",{src:"/Icon/crew.svg",alt:""})}),s.jsx("p",{children:"크루원"})]}),b2.map(r=>s.jsx(x2,{rank:r.rank,name:r.name,distance:r.distance,onClick:()=>a("/crewMember")},r.rank))]})}const j2=m.div`
+`,b2=[{rank:1,name:"구예진",distance:99.9},{rank:2,name:"박재민",distance:24.3},{rank:3,name:"이영재",distance:18.7},{rank:4,name:"김소리",distance:10.2},{rank:5,name:"김한주",distance:6.6}];function S2(){const a=Dt();return s.jsxs(m2,{children:[s.jsxs(v2,{children:[s.jsxs(y2,{children:["src=","/capstonePrototype0/"+"Icon/crew.svg"]}),s.jsx("p",{children:"크루원"})]}),b2.map(o=>s.jsx(x2,{rank:o.rank,name:o.name,distance:o.distance,onClick:()=>a("/crewMember")},o.rank))]})}const j2=m.div`
   display: flex;
   flex-direction: column;
 `,E2=m.div`
@@ -1247,7 +1237,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   width: 100%;
   border-radius: 10px;
   background: rgba(246, 247, 251, 0.8);
-`;function C2(){return s.jsxs(A2,{children:[s.jsx(ta,{iconSrc:"/Illust/distance.svg",alt:"러닝 거리",label:"러닝 거리",value:17,unit:"km"}),s.jsx(ta,{iconSrc:"/Illust/field.svg",alt:"생성 필드 수",label:"생성 필드 수",value:22,unit:"개"}),s.jsx(ta,{iconSrc:"/Illust/forest.svg",alt:"숲 가꾸기",label:"숲 가꾸기",value:12,unit:"회"})]})}const M2=m.div`
+`;function C2(){const a="/capstonePrototype0/";return s.jsxs(A2,{children:[s.jsx(ta,{iconSrc:a+"Illust/distance.svg",alt:"러닝 거리",label:"러닝 거리",value:17,unit:"km"}),s.jsx(ta,{iconSrc:a+"Illust/field.svg",alt:"생성 필드 수",label:"생성 필드 수",value:22,unit:"개"}),s.jsx(ta,{iconSrc:a+"Illust/forest.svg",alt:"숲 가꾸기",label:"숲 가꾸기",value:12,unit:"회"})]})}const M2=m.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1328,7 +1318,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
 
   width: 24px;
   height: 24px;
-`;function ql(){return s.jsxs(H2,{children:[s.jsxs(G2,{children:[s.jsx(L2,{children:"성장"}),s.jsxs(q2,{children:[s.jsx("p",{className:"date",children:"06월 06일"}),s.jsx("p",{children:"러닝"})]})]}),s.jsx(Y2,{children:s.jsx("img",{src:"/Icon/chevron-down-Gray6.svg",alt:""})})]})}const k2=m.div`
+`;function ql(){return s.jsxs(H2,{children:[s.jsxs(G2,{children:[s.jsx(L2,{children:"성장"}),s.jsxs(q2,{children:[s.jsx("p",{className:"date",children:"06월 06일"}),s.jsx("p",{children:"러닝"})]})]}),s.jsx(Y2,{children:s.jsx("img",{src:"/capstonePrototype0/Icon/chevron-down-Gray6.svg",alt:""})})]})}const k2=m.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -1495,7 +1485,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   padding: 2px 6px;
 `,Bo=m.span`
   font-weight: 600;
-`;function u4({entry:a}){return a.type==="growth"?s.jsxs(No,{children:[s.jsxs("span",{children:[s.jsx(Bo,{children:a.user}),"님이 필드를 성장시켰어요."]}),a.badge&&s.jsx(i4,{children:a.badge})]}):a.type==="levelup"?s.jsxs(No,{children:[s.jsxs("div",{children:[s.jsxs("div",{children:[s.jsx(Bo,{children:a.target}),"의 레벨이 올랐어요!"]}),s.jsxs("div",{style:{fontSize:"13px"},children:[a.from," ",s.jsxs("span",{style:{color:"#5e66ff"},children:["➤ ",a.to]})]})]}),s.jsx("img",{src:a.image,alt:"레벨업",width:40})]}):a.type==="asset"?s.jsxs(No,{children:[s.jsxs("div",{children:[s.jsxs("div",{children:[s.jsx(Bo,{children:a.name}),"가 찾아왔어요!"]}),s.jsx("div",{style:{fontSize:"13px",color:"#aaa"},children:a.description})]}),s.jsx("img",{src:a.image,alt:"동물",width:40})]}):null}const r4=m.div`
+`;function u4({entry:a}){const r="/capstonePrototype0/",o=c=>c.startsWith("/")?r+c.slice(1):r+c;return a.type==="growth"?s.jsxs(No,{children:[s.jsxs("span",{children:[s.jsx(Bo,{children:a.user}),"님이 필드를 성장시켰어요."]}),a.badge&&s.jsx(i4,{children:a.badge})]}):a.type==="levelup"?s.jsxs(No,{children:[s.jsxs("div",{children:[s.jsxs("div",{children:[s.jsx(Bo,{children:a.target}),"의 레벨이 올랐어요!"]}),s.jsxs("div",{style:{fontSize:"13px"},children:[a.from," ",s.jsxs("span",{style:{color:"#5e66ff"},children:["➤ ",a.to]})]})]}),s.jsx("img",{src:o(a.image),alt:"레벨업",width:40})]}):a.type==="asset"?s.jsxs(No,{children:[s.jsxs("div",{children:[s.jsxs("div",{children:[s.jsx(Bo,{children:a.name}),"가 찾아왔어요!"]}),s.jsx("div",{style:{fontSize:"13px",color:"#aaa"},children:a.description})]}),s.jsx("img",{src:o(a.image),alt:"동물",width:40})]}):null}const r4=m.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -1521,7 +1511,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
     line-height: 18px;
     letter-spacing: -0.45px;
   }
-`;function d4(){const a=[{date:"26",day:"목",entries:[{type:"growth",user:"구예진"},{type:"levelup",target:"벚꽃나무",from:"Lv.1",to:"Lv.2",image:"/Tree/level2.png"}]},{date:"24",day:"수",entries:[{type:"growth",user:"박재민",badge:"성장"},{type:"growth",user:"구예진",badge:"성장"},{type:"asset",name:"비둘기",description:"부가설명",image:"/Animal/bird.png"},{type:"levelup",target:"벚꽃나무",from:"Lv.1",to:"Lv.2",image:"/Tree/level2.png"}]}];return s.jsxs(s4,{children:[s.jsx(f4,{children:s.jsx("p",{children:"필드 히스토리"})}),a.map(r=>s.jsx(o4,{data:r},r.date))]})}const p4=m.div`
+`;function d4(){const a="/capstonePrototype0/",r=[{date:"26",day:"목",entries:[{type:"growth",user:"구예진"},{type:"levelup",target:"벚꽃나무",from:"Lv.1",to:"Lv.2",image:a+"Tree/level2.png"}]},{date:"24",day:"수",entries:[{type:"growth",user:"박재민",badge:"성장"},{type:"growth",user:"구예진",badge:"성장"},{type:"asset",name:"비둘기",description:"부가설명",image:a+"Animal/bird.png"},{type:"levelup",target:"벚꽃나무",from:"Lv.1",to:"Lv.2",image:a+"Tree/level2.png"}]}];return s.jsxs(s4,{children:[s.jsx(f4,{children:s.jsx("p",{children:"필드 히스토리"})}),r.map(o=>s.jsx(o4,{data:o},o.date))]})}const p4=m.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1847,7 +1837,7 @@ Please change the parent <Route path="${D}"> to <Route path="${D==="/"?"*":`${D}
   align-items: center;
   justify-content: center;
   gap: 8px;
-`;function nS(){const[a,r]=S.useState(!1),[o,c]=S.useState("before"),[d,h]=S.useState("summary"),[y,E]=S.useState(!1),[x,g]=S.useState(!1),[T,_]=S.useState([]),M=()=>{c("before"),h("summary"),r(!0)},L=()=>{c("before"),h("goal"),r(!0)},O=()=>{c("ing"),h("running"),E(!0),r(!0)};return s.jsxs(F4,{children:[s.jsx(V4,{isRunning:y,setPathData:_,isPaused:x}),s.jsxs(P4,{onClick:L,children:[s.jsx("img",{src:"/Icon/flag.svg"}),s.jsx("p",{children:"목표"})]}),s.jsx(I4,{children:s.jsx("img",{src:"/Icon/mark.svg"})}),s.jsx(eS,{children:s.jsx(kl,{text:"러닝 시작",onClick:()=>{O()}})}),s.jsxs(lS,{children:[s.jsx(J4,{tip:"2회 러닝",type:"big"}),s.jsx(tS,{onClick:M})]}),s.jsx(us,{step:o,type:d,open:a,setIsRunning:E,setIsPaused:g,pathData:T,onClose:()=>r(!1)})]})}const aS=m.div`
+`;function nS(){const[a,r]=S.useState(!1),[o,c]=S.useState("before"),[d,h]=S.useState("summary"),[y,E]=S.useState(!1),[x,g]=S.useState(!1),[T,_]=S.useState([]),M="/capstonePrototype0/",L=()=>{c("before"),h("summary"),r(!0)},O=()=>{c("before"),h("goal"),r(!0)},q=()=>{c("ing"),h("running"),E(!0),r(!0)};return s.jsxs(F4,{children:[s.jsx(V4,{isRunning:y,setPathData:_,isPaused:x}),s.jsxs(P4,{onClick:O,children:[s.jsx("img",{src:M+"Icon/flag.svg",alt:"목표 설정"}),s.jsx("p",{children:"목표"})]}),s.jsx(I4,{children:s.jsx("img",{src:M+"Icon/mark.svg",alt:"내 위치로 이동"})}),s.jsx(eS,{children:s.jsx(kl,{text:"러닝 시작",onClick:q})}),s.jsxs(lS,{children:[s.jsx(J4,{tip:"2회 러닝",type:"big"}),s.jsx(tS,{onClick:L})]}),s.jsx(us,{step:o,type:d,open:a,setIsRunning:E,setIsPaused:g,pathData:T,onClose:()=>r(!1)})]})}const aS=m.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
